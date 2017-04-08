@@ -8,7 +8,7 @@ r = requests.post(
     url='http://httpbin.org/post',
     params={'my-param-name': 'param-value'},
     headers={'my-header-name': 'header-value'},
-    json=json.dumps({"some": "value"})
+    json=json.dumps({'some': 'value'})
 )
 
 print('STATUS CODE: ', r.status_code)

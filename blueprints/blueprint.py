@@ -1,8 +1,8 @@
 from flask import Blueprint
 
-blueprint = Blueprint('blueprint', __name__)
+our_bp = Blueprint('blueprint', __name__)
 
 
-@blueprint.route('/blueprint')
+@our_bp.route('/blueprint')
 def hello():
     return "Hello from blueprint!"

@@ -1,8 +1,8 @@
 from flask import Flask
-from blueprints.blueprint import blueprint
+from blueprints.blueprint import our_bp
 
 app = Flask(__name__)
-app.register_blueprint(blueprint)
+app.register_blueprint(our_bp)
 
 
 @app.route("/")

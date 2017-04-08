@@ -17,5 +17,10 @@ def hello_someone(username):
 def hello_converted_someone(username):
     return "Welcome converted: " + username + "!"
 
+
+@app.route("/convert-int/<int:username>")
+def hello_converted_someone1(username):
+    return "received: " + str(username.__class__.__name__) + "!"
+
 if __name__ == "__main__":
     app.run()
